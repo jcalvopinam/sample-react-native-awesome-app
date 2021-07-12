@@ -1,5 +1,8 @@
-import {StyleSheet, Pressable} from 'react-native';
+import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
+  mainContainer: {
+    flex: 1,
+  },
   scrollView: {
     width: '100%',
     height: '100%',
@@ -18,6 +21,13 @@ export default StyleSheet.create({
     fontWeight: '600',
     color: 'black',
   },
+  sectionTitleGreen: {
+    fontSize: 24,
+    fontWeight: '600',
+    color: 'green',
+    textAlign: 'center',
+    marginBottom: 20,
+  },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
@@ -31,7 +41,7 @@ export default StyleSheet.create({
     textAlign: 'center',
   },
   sectionDescriptionStory: {
-    marginTop: 8,
+    marginTop: 15,
     fontSize: 20,
     fontWeight: '400',
     color: 'white',
@@ -52,6 +62,12 @@ export default StyleSheet.create({
     resizeMode: 'cover',
     position: 'absolute',
   },
+  storyImageSmall: {
+    width: 120,
+    height: 120,
+    resizeMode: 'cover',
+    position: 'absolute',
+  },
   buttonWrapper: {
     marginTop: 200,
   },
@@ -68,5 +84,89 @@ export default StyleSheet.create({
     fontWeight: '400',
     color: 'black',
     textAlign: 'center',
+  },
+  storyContainer: {
+    backgroundColor: 'black',
+    width: '100%',
+    height: '100%'
+  },
+  storyInnerContainer: {
+    alignContent: 'center',
+    paddingBottom: 10,
+    paddingTop: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
+  separatorLine: {
+    height: 1,
+    backgroundColor: 'lightsalmon',
+    paddingTop: 2,
+    marginTop: 25,
+  },
+  headerImage: {
+    width: '100%',
+    height: 250,
+    resizeMode: 'cover',
+  },
+  footerImage: {
+    width: 75,
+    height: 75,
+    resizeMode: 'cover',
+  },
+  footerContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+    marginBottom: 20,
+  },
+  headerContainer: {
+    paddingHorizontal: 25,
+    marginBottom: 10,
+    backgroundColor: 'lightsalmon',
+    borderRadius: 6,
+  },
+  headerTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+    color: 'black',
+    textAlign: 'center',
+  },
+  container: {
+    height: 53,
+    width: 450,
+    backgroundColor: 'white',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  searchInput: {
+    backgroundColor: 'white',
+    flex: 1,
+    paddingBottom: 10,
+    paddingTop: 15,
+    paddingLeft: 20,
+    flexDirection: 'column',
+    color: 'black',
+    lineHeight: 20,
+    letterSpacing: 0,
+    fontSize: 20,
+    justifyContent: 'center',
+  },
+  clickableText: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+    color: 'green',
+  },
+  clearContainer: {
+    backgroundColor: 'white',
+    flexDirection: 'column',
+    paddingRight: '15%',
+    paddingBottom: 1,
+    justifyContent: 'center',
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10,
+  },
+  clearImage: {
+    height: 20,
+    width: 20,
   },
 });
